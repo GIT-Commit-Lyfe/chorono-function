@@ -7,7 +7,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-let index = 10
+let index = 40
 app.post("/write", function(req, res){
 
  
