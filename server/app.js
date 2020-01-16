@@ -7,12 +7,12 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-let index = 426
+let index = 459
 app.post("/write", function(req, res){
 
  
   //fs.writeFileSync(Date.now().toString() + ".txt", req.body.array.join("\r\n"))
-  fs.writeFile(index+ "-"+`IWC `+req.body.title + ".txt", req.body.array.join("\r\n"), function(err){
+  fs.writeFile(index+ "-"+`Blancpain `+req.body.title + ".txt", req.body.array.join("\r\n"), function(err){
     if(err){
       console.log(err)
       res.status(500).json({
